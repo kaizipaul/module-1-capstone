@@ -1,0 +1,32 @@
+{
+  "name": "module-1-capstone",
+  "version": "1.0.0",
+  "description": "The Capstone Project from Module 1 of Microverse's Full Stack Developer course",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwindcss build src/styles.css -o css/index.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaizipaul/module-1-capstone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kaizipaul/module-1-capstone/issues"
+  },
+  "homepage": "https://github.com/kaizipaul/module-1-capstone#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.26.0",
+    "hint": "^7.1.2",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.21.0",
+    "tailwindcss": "^3.1.8"
+  }
+}

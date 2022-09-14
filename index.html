@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <script defer src="https://cdn.tailwindcss.com"></script>
+    <script defer src="tailwind.js"></script>
+
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <!--header section-->
+    <header class="fixed z-11 w-screen">
+        <ul class="hidden md:flex md:px-52 h-14 bg-gray-900 items-center justify-end text-white gap-8">
+            <li class="text-[1.2rem]">
+                <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+            </li>
+            <li class="text-[1.2rem]">
+                <a href="#">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </li>
+            <li class="text-[1.2rem]">
+                <a href="#">English</a>
+            </li>
+            <li class="text-[1.2rem]">
+                <a href="#">MyPage</a>
+            </li>
+            <li class="text-[1.2rem]">
+                <a href="#">Logout</a>
+            </li>
+        </ul>
+        <nav class="h-20 p-5 md:px-50 bg-white/50 backdrop-blur-xl text-black flex items-center drop-shadow">
+            <div class="hidden md:flex w-full items-center justify-between">
+                <div class="w-14 h-auto ml-[10rem]">
+                    <a href="./index.html">
+                        <img src="./assets/img/heart.black.png" alt="website logo"
+                            class="objec-contain w-full h-full hover:scale-125 transition duration-200">
+                    </a>
+                </div>
+                <div class="flex gap-20 items-center">
+                    <ul class="flex items-center gap-9">
+                        <li class="text-[1.2rem] text-gray-600 hover:text-orange-600 transition duration-200">
+                            <a href="./about.html">About</a>
+                        </li>
+                        <li class="text-[1.2rem] text-gray-600 hover:text-orange-600 transition duration-200">
+                            <a href="#">Program</a>
+                        </li>
+                        <li class="text-[1.2rem] text-gray-600 hover:text-orange-600 transition duration-200">
+                            <a href="#">Join</a>
+                        </li>
+                        <li class="text-[1.2rem] text-gray-600 hover:text-orange-600 transition duration-200">
+                            <a href="#">News</a>
+                        </li>
+                        <li class="text-[1.2rem] text-gray-600 hover:text-orange-600 transition duration-200">
+                            <a href="#">Sponsor</a>
+                        </li>
+                    </ul>
+
+                    <button type="button"
+                        class="text-orange-600 text-[1.4rem] border-4 hover:text-white border-orange-600 p-2 hover:bg-orange-600 transition ease-in-out duration-200">Contact
+                        Us</button>
+                </div>
+            </div>
+            <div id="hamburger" class="md:hidden">
+                <i class="fa-solid fa-bars text-[2rem] hover:scale-110 transition duration-500"></i>
+                <!--hamburger menu-->
+            </div>
+        </nav>
+    </header>
+
+    <!--menu window-->
+    <header id="menu-window"
+        class="fixed w-screen h-screen bg-gray-700/90 backdrop-blur-lg z-12 -left-[110%] md:hidden transition-all ease-in duration-500">
+        <nav class="h-20 p-5 md:px-50 bg-gray-700 text-white flex items-center drop-shadow">
+            <div class="flex w-full items-center justify-between">
+                <div class="w-14 h-auto">
+                    <a href="./index.html"><img src="./assets/img/heart.black.png" alt="home button"
+                            class="object-contain w-full h-full hover:scale-125 transition duration-500">
+                    </a>
+                </div>
+                <div id="close-btn" class="md:hidden">
+                    <i class="fa-solid fa-times text-[2rem] hover:scale-125 transition duration-500"></i>
+                </div>
+            </div>
+        </nav>
+        <div class="flex flex-col items-center mt-24 gap-12 h-full">
+            <ul class="flex flex-col items-center gap-12 text-center">
+                <li class="text-[1.6rem] text-white hover:text-orange-600 transition duration-200">
+                    <a href="./about.html">About</a>
+                </li>
+                <li class="text-[1.6rem] text-white hover:text-orange-600 transition duration-200">
+                    <a href="#">Program</a>
+                </li>
+                <li class="text-[1.6rem] text-white hover:text-orange-600 transition duration-200">
+                    <a href="#">News</a>
+                </li>
+                <li class="text-[1.6rem] text-white hover:text-orange-600 transition duration-200">
+                    <a href="#">Join</a>
+                </li>
+                <li class="text-[1.6rem] text-white hover:text-orange-600 transition duration-200">
+                    <a href="#">Sponsor</a>
+                </li>
+            </ul>
+            <button type="button"
+                class="text-orange-600 text-[1.4rem] border-4 hover:text-white border-solid border-orange-600 p-3 rounded hover:bg-orange-600 transition ease-in-out duration-200">Contact
+                Us</button>
+        </div>
+    </header>
+
+    <section id="landing-page"
+        class="bg-[url('./assets/img/bg-main.jpg')] mt-20 md:mt-[8.5rem] bg-cover bg-center bg-no-repeat">
+        <div class="bg-gray-200/[50%] px-8 py-32 md:px-40 md:py-36 lg:px-52 lg:py-44">
+            <div class="w-full md:w-[60%] lg:w-[75%]">
+                <h2 class="mb-2 text-[2.6rem] lg:text-[3rem] text-orange-600 font-bold">
+                    "Hello! Developers"
+                </h2>
+                <h1 class="text-[3.5rem] md:text-[4.5rem] lg:text-[5rem] text-orange-600 font-black leading-tight">
+                    WEB DEV GLOBAL CONFERENCE 2022
+                </h1>
+                <div class="my-12 p-6 bg-gray-300 border-2 border-white">
+                    <p class="text-[1.5rem]">A joyful celebration believing in the value of openness and sharing,
+                        creating a positive change with people from over 90 countries is taking place in November in
+                        Spain</p>
+                </div>
+                <div class="text-gray-600">
+                    <span class="text-[3rem] font-black leading-snug">2022.11.14(MON)~18(FRI)</span>
+                    <p class="text-[1.5rem] mt-2">@ MACBA Museum of Contemporary Art of Barcelona</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Programmes section-->
+    <section id="programmes" class="bg-gray-800">
+        <div class="px-8 py-32 md:px-40 md:py-36 lg:px-52 lg:py-44 text-white">
+            <div class="flex flex-col items-center gap-10">
+                <h3 class="text-[2rem] text-center">Main Program</h3>
+                <div class="w-12 border-t-2 border-orange-600"></div>
+                </div>
+                <div id="programme-cards" class="my-20 grid grid-cols-1 gap-4 md:grid-cols-2 gap-4 lg:grid-cols-3 gap-4"></div>
+                <div class="flex flex-col items-center">
+                    <button type="button" class="text-[1.4rem] bg-orange-600 p-6 hover:bg-orange-800 transition ease-in-out duration-200">
+                        Join Conference
+                    </button>
+                </div>
+            
+
+        </div>
+    </section>
+
+
+    <section id="speakers" class="px-8 py-32 md:px-40 md:py-36 lg:px-52 lg:py-44">
+        <div class="flex flex-col items-center gap-8">
+            <h3 class="text-[2rem] text-center ">Featured Speakers</h3>
+            <div class="w-12 border-t-2 border-orange-600"></div>
+        </div>
+        <div id="speakers-grid" class="my-20 grid grid-cols-1 md:grid-cols-2 gap-20"></div>
+    </section>
+
+
+    <section id="partners" class="bg-gray-800 px-8 py-32 md:px-40 md:py-36 lg:px-52 lg:py-44 text-white">
+        <div class="flex flex-col items-center gap-8">
+            <h3 class="text-[2rem] text-center">Our Partners</h3>
+            <div class="w-12 border-t-2 border-orange-600"></div>
+        </div>
+        <div class="my-20 grid grid-cols-3 lg:grid-cols-5 gap-20 justify-center text-center">
+            <div class="hover:scale-110 transition duration-500">
+           <i class="fa-brands fa-google text-[2.2rem]"></i>
+           <p class="mt-3 text-[1.5rem]">Google</p>
+        </div>
+        <div class="hover:scale-110 transition duration-500">
+            <i class="fa-brands fa-discord text-[2.2rem]"></i>
+            <p class="mt-3 text-[1.5rem]">Discord</p>
+         </div>
+         <div class="hover:scale-110 transition duration-500">
+            <i class="fa-brands fa-firefox text-[2.2rem]"></i>
+            <p class="mt-3 text-[1.5rem]">Mozilla</p>
+         </div>
+         <div class="hover:scale-110 transition duration-500">
+            <i class="fa-brands fa-slack-hash text-[2.2rem]"></i>
+            <p class="mt-3 text-[1.5rem]">Slack</p>
+         </div>
+         <div class="hover:scale-110 transition duration-500">
+            <i class="fa-brands fa-airbnb text-[2.2rem]"></i>
+            <p class="mt-3 text-[1.5rem]">AirBnB</p>
+         </div>
+        </div>
+    </section>
+
+
+    <footer class="px-20 py-32 md:px-40 md:py-36 lg:px-52 lg:py-44 flex items-center justify-start gap-14 text-gray-800">
+        <div class="w-48 h-auto md:w-60 lg:w-72">
+            <a href="#">
+                <img src="./assets/img/cc.logo.large.png" alt="CC logo" class="object-contain w-full h-full hover:scale-125 transition duration-500">
+            </a>
+        </div>
+        <div class="px-2 text-[1.2rem] md:text-[1.5rem] lg:text-[1.8rem]">
+            <p>2022 Creative Commons.</p>
+            <p>Some Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
