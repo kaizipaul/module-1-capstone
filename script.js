@@ -85,20 +85,20 @@ const closeBtn = document.querySelector('#close-btn');
 const speakersGrid = document.querySelector('#speakers-grid');
 
 hamburger.addEventListener('click', () => {
-  menuWindow.style.left = 0;
+  menuWindow.style.width = '100vw';
 });
 
 closeBtn.addEventListener('click', () => {
-  menuWindow.style.left = '-110%';
+  menuWindow.style.width = '0';
 });
 
 speakers.forEach((speaker) => {
   speakersGrid.innerHTML += `
  <div class="grid grid-cols-5 justify-center gap-10">
       <div class="col-span-2 w-44 h-44 md:w-64 md:h-64 xl:w-72 xl:h-72">
-        <div class="bottom-0 right-0">
+        <div class="bottom-0 right-0 rounded-full  drop-shadow-md hover:drop-shadow-xl transition ease-in duration-500 cursor-pointer">
           <img
-            class="w-36 h-36 md:w-40 md:h-40 xl:w-64 xl:h-64 rounded-full object-cover"
+            class="w-36 h-36 md:w-40 md:h-40 xl:w-64 -z-50 xl:h-64 rounded-full object-cover"
             src=${speaker.img}
             alt=${speaker.name}
           />
@@ -121,8 +121,8 @@ speakers.forEach((speaker) => {
 
 programmes.forEach((programme) => {
   programmeCards.innerHTML += `
-    <div class=" border-0 hover:border-2 hover:scale-[1.01] transition ease-in-out duration-1000 grid grid-cols-12 gap-6 md:gap-4 items-center bg-gray-600/50 px-4 py-6 md:px-6 md:py-8 md:text-center">
-      <div class="col-span-3 md:col-span-12 flex items-center justify-center">
+    <div class="border border-transparent hover:border-white cursor-pointer transition ease-in-out duration-500 grid grid-cols-6 gap-6 md:gap-4 items-center bg-gray-600/50 px-4 py-6 md:px-6 md:py-8 md:text-center">
+      <div class="col-span-3 md:col-span-12 flex justify-start md:items-center md:justify-center">
         <img class="w-20 h-20" src=${programme.icon} alt=${programme.title}></img>
       </div>
       <div class="col-span-9 md:col-span-12">
