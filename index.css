@@ -8,6 +8,7 @@ body {
   padding: 0 !important;
   overflow-x: hidden;
   width: 100vw;
-  font-size: 65%;
+  font-size: 70%;
   font-family: "Lato", sans-serif;
+  scroll-behavior: smooth;
 }
