@@ -84,12 +84,26 @@ const menuWindow = document.querySelector('#menu-window');
 const closeBtn = document.querySelector('#close-btn');
 const speakersGrid = document.querySelector('#speakers-grid');
 
+function disableScroll() {
+  const horizontalScroll = window.scrollX;
+  const verticalScroll = window.scrollY;
+  window.onscroll = () => {
+    window.scroll(horizontalScroll, verticalScroll);
+  };
+}
+
+function enableScroll() {
+  window.onscroll = '';
+}
+
 hamburger.addEventListener('click', () => {
   menuWindow.style.width = '100vw';
+  disableScroll();
 });
 
 closeBtn.addEventListener('click', () => {
   menuWindow.style.width = '0';
+  enableScroll();
 });
 
 speakers.forEach((speaker) => {
